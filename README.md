@@ -22,12 +22,12 @@ This code is designed to be run in a Google Colab notebook or a similar environm
 ## Experimentation and Analysis
 This is an experimental project. The code provides the tools to train and save probes. Interesting next steps include:
 
-Analyzing Accuracy: Examine the layer_wise_accuracies to see which layers are best at predicting pivotal tokens.
-Loading Probes: Use the provided loading code to load probes from interesting layers.
-Inference: Use the loaded probes with the sample text prediction code to see how they predict on new, unseen text.
-Visualization: Extract activations for a subset of test data, load the best probe, score the activations with the probe, and visualize the activations (e.g., using PCA or t-SNE) colored by true label and/or probe score to see if the probe creates linearly separable clusters.
-Hyperparameter Tuning: Experiment with learning_rate, num_epochs, or batch_size in the train_and_evaluate_probe function.
+- Analyzing Accuracy: Examine the layer_wise_accuracies to see which layers are best at predicting pivotal tokens.
+- Loading Probes: Use the provided loading code to load probes from interesting layers.
+- Inference: Use the loaded probes with the sample text prediction code to see how they predict on new, unseen text.
+- Visualization: Extract activations for a subset of test data, load the best probe, score the activations with the probe, and visualize the activations (e.g., using PCA or t-SNE) colored by true label and/or probe score to see if the probe creates linearly separable clusters.
+- Hyperparameter Tuning: Experiment with learning_rate, num_epochs, or batch_size in the train_and_evaluate_probe function.
 Feel free to explore and modify the code to conduct further experiments!
 
 ## Model Reference
-This project uses the **Qwen3-0.6B** and **DeepSeek R1 Distill** Qwen 1.5B model from Hugging Face.
+This project uses the **Qwen3-0.6B** model from Hugging Face.
